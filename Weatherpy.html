@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeatherPy</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+ <body>
+        
+ <div class="container"> 
+
+    <nav class="navbar navbar-expand-lg navbar-light   bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="#">Humidity</a></li>
+                <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Data</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+ 
+  <div class="row>">
+    <div class="col-md-12">
+    <section>
+        <header>
+            <h1>Summary: Latitude vs. X</h1>
+            <hr></hr>
+        </header>
+    
+        <article>
+            <a target="_blank" href="assets/latitudextemp.png">
+                <img src="assets/latitudextemp.png" alt="Latitude vs. Temperature Map">
+            </a>
+            <p> The objective for this project was to analyze how weather changes as you get closer to the equator. To accomplish this task, we used data from the OpenWeatherMap Api to gather a dataset on 500 Plus cities.
+            <br>
+            <br>    
+            After gathering the dataset, we used Matplotlib to plot different components of the weather vs. latitude. We used for elements of the weather to determine the ideal climate. These elements of weather include temperature, cloudiness, windspeed and humidity. On this site you will find source data and visualizations we created with our analizations, explantions and trends /correlations that we found. </p>
+        </article>
+    </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+    <section>
+     <header>
+         <h1>Visualizations</h1>
+         <hr></hr>
+     </header>
+        
+     <article>
+        <a target="_blank" href="assets/latitudextemp.png">
+            <img src="assets/latitudextemp.png" alt="Latitude vs. Temperature Map">
+        </a>
+        <a target="_blank" href="assets/latitudexhumidity.png">
+            <img src="assets/latitudexhumidity.png" alt="Latitude vs. Humidity Map">
+        </a>
+        <a target="_blank" href="assets/latitudexcloudiness.png">
+            <img src="assets/latitudexcloudiness.png" alt="Latitude vs. Cloudiness Map">
+        </a>
+        <a target="_blank" href="assets/latitudexwindspeed.png">
+            <img src="assets/latitudexwindspeed.png" alt="Latitude vs. Wind Speed Map">
+        </a>
+     </article>
+    </section>
+    </div>
+  </div>
+ </div>
+
+ </body>
+</html>
