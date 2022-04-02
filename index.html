@@ -1,83 +1,88 @@
+<!-- DocuType Declaration this intitalizes the html document-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vacation Destination Visualizations</title>
+        <title>Ideal Vacation Destinations</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     </head>
- <body>
-        
- <div class="container"> 
+ <body>   
+    <!-- Rows function inside of containers(grid created) -->
+    <div class="container"> 
+          <!-- Nav bar created -->
+          <div class="row justify-content-between">
+          <nav class="navbar navbar-expand-lg navbar-light   bg-light">
+            
+            <a class="navbar-brand" href="index.html">Vacation Destinations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse "         id="navbarNavDropdown">
+              
+                <ul class="navbar-nav navbar-right">
+                <li class="nav-item dropdown">
 
-    <nav class="navbar navbar-expand-lg navbar-light   bg-light">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="Landingpage.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Landingpage.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="Tempvisualpage.html">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="Humidityvisualpage.html">Humidity</a></li>
-                <li><a class="dropdown-item" href="Cloudinessvisualpage.html">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="Windspeedvisualpage.html">Wind Speed</a></li>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Plots
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="Tempvisualpage.html">Max Temperature</a></li>
+                    <li><a class="dropdown-item" href="Humidityvisualpage.html">Humidity</a></li>
+                    <li><a class="dropdown-item" href="Cloudinessvisualpage.html">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="Windspeedvisualpage.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparisonpage.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Datapage.html">Data</a>
+                </li>
                 </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Comparisonpage.html">Comparison</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Datapage.html">Data</a>
-            </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
- 
-    <div class="container">
-        <section class="row">
-          <div class="col-md-8">
-            <article class="description-content">
-              <h1 class="description-header">Summary: Latitude vs. X</h1>
-              <hr class="description-hr"/>
-              <img src="assets/latitudextemp.png" alt="" id="description-image"/>
-              <p> The objective for this project was to analyze how weather changes as you get closer to the equator. To accomplish this task, we used data from the OpenWeatherMap Api to gather a dataset on 500 Plus cities.
-                <br>
-                <br>    
-                After gathering the dataset, we used Matplotlib to plot different components of the weather vs. latitude. We used for elements of the weather to determine the ideal climate. These elements of weather include temperature, cloudiness, windspeed and humidity. On this site you will find source data and visualizations we created with our analizations, explantions and trends /correlations that we found. </p>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <!-- Start of Visualizations imageNav Area -->
-            <section id="imageNav-area">
-              <div class="imageNav-content">
-                <h2 class="imageNav-header">Visualizations</h2>
-                <hr />
-                <div id="images">
-                  <a href="Tempvisualpage.html"><img src="assets/latitudextemp.png" alt="Latitude vs. Temperature" class="imageNav-photo"></a>
-                  <a href="Humidityvisualpage.html"><img src="assets/latitudexhumidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
-                  <a href="Cloudinessvisualpage.html"><img src="assets/latitudexcloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
-                  <a href="Latitudevisualpage.html"><img src="assets/latitudexwindspeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
-                </div>
+            </div>
+            </div>
+        </nav>
+    
+        <div class="container">
+            <section class="row">
+              <div class="col-md-8">
+                <article class="description-content">
+                  <h1 class="description-header">Summary: Latitude vs. X</h1>
+                  <hr class="description-hr"/>
+                  <img src="assets/images/latitudextemp.png" alt="" id="description-image"/>
+                  <p> The objective for this project was to analyze how weather changes as you get closer to the equator. To accomplish this task, we used data from the OpenWeatherMap Api to gather a dataset on 500 Plus cities.
+                    <br>
+                    <br>    
+                    After gathering the dataset, we used Matplotlib to plot different components of the weather vs. latitude. We used for elements of the weather to determine the ideal climate. These elements of weather include temperature, cloudiness, windspeed and humidity. On this site you will find source data and visualizations we created with our analizations, explantions and trends /correlations that we found. </p>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <!-- Start of Visualizations imageNav Area -->
+                <section id="imageNav-area">
+                  <div class="imageNav-content">
+                    <h2 class="imageNav-header">Visualizations</h2>
+                    <hr />
+                    <div id="images">
+                      <a href="Tempvisualpage.html"><img src="assets/images/latitudextemp.png" alt="Latitude vs. Temperature" class="imageNav-photo"></a>
+                      <a href="Humidityvisualpage.html"><img src="assets/images/latitudexhumidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                      <a href="Cloudinessvisualpage.html"><img src="assets/images/latitudexcloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                      <a href="Latitudevisualpage.html"><img src="assets/images/latitudexwindspeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+                    </div>
+                  </div>
+                </section>
+                <!-- End of the Visualizations imageNav Area -->
               </div>
             </section>
-            <!-- End of the Visualizations imageNav Area -->
           </div>
-        </section>
-      </div>
 
-  
- </div>
- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
  </body>
 </html>
